@@ -12,11 +12,9 @@ Loop {
         IF (key = "D") {
             WinSet, AlwaysOnTop, On, %name%
             Sleep, %delay%
-            MouseGetPos, x, y
-            dummy_x := x
-            dummy_y := y
-            time_past = % A_Now A_MSec
             IfWinNotActive, Minecraft,, {
+                MouseGetPos, dummy_x, dummy_y
+                time_past = % A_Now A_MSec
                 Loop {
                     IfWinActive, Minecraft
                         break      
