@@ -1,9 +1,9 @@
 ; Settings
 global name := "Fullscreen Projector" ; Fullscreen Projector name
 global key := "U" ; in game Reset HotKey
-global delay := 300 ; monitoring delay (probably around 100 ~ 300 ms)
+global delay := 300 ; monitoring start delay (probably around 100 ~ 300 ms)
 global monitoring := 1 ; Fullscreen Projector monitoring activation (probably 1 sec (integer))
-global mousetrigger := True ; include mouse movement to the monitoring on/off trigger
+global mousetrigger := True ; include mouse movement to the monitoring close
 
 ; Main
 Loop {
